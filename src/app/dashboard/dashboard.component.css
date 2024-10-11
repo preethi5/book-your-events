@@ -1,0 +1,18 @@
+
+.top-menu {
+  background: #1976d2;
+  padding: 2px 15px;
+}
+
+.courses {
+  display: flex;
+    gap: 55px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: stretch;
+    align-items: flex-end;
+}
+
+.outer {
+  padding-left: 4%;
+}

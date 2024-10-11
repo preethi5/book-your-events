@@ -1,0 +1,17 @@
+<div class="header-out">
+    <!-- <img src="logo.jpeg" alt="Photo of event" width="100" height="100"> -->
+
+  <mat-form-field class="example-full-width">
+
+    <mat-label>Search Event</mat-label>
+    <input #searchBox (keyup)="onSearch()" matInput placeholder="Ex. Event Name / Location">
+
+  </mat-form-field>
+
+  <label>
+    <input type="checkbox" name="dark" [(ngModel)]="dark" />
+    <span>Enable Dark Theme</span>
+  </label>
+
+</div>
+<app-dashboard [filterValSub]=filterValSub></app-dashboard>

@@ -1,0 +1,24 @@
+<div class="outer">
+<div class="container">
+  <div class="courses">
+    @for(event of events; track $index) {
+    <app-event-card [event]="event"></app-event-card>
+    <!-- @if($index == 3) {
+      <br/>
+    } -->
+    }
+    @empty {
+    <mat-card class="example-card" appearance="outlined">
+      <mat-card-header>
+        <mat-card-title class="course-title">No Events Found!</mat-card-title>
+        <mat-card-subtitle>Please adjust your search...</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <img mat-card-image src="no_res.png" alt="Photo of no event">
+      </mat-card-content>
+    </mat-card>
+    }
+
+  </div>
+</div>
+</div>
